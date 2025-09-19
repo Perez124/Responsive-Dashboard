@@ -1,0 +1,151 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #121212;   /* Dark background */
+  color: #f1f1f1;             /* Light text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* ===== FLEX HELPERS ===== */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== CONTAINER ===== */
+.chart-container {
+  background-color: #1e1e2f;
+  padding: 2rem;
+  border-radius: 16px;
+  width: 400px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* ===== BALANCE CARD ===== */
+.balance-card {
+  background-color: #24243e;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.balance-card h3 {
+  font-size: 1rem;
+  color: #aaa;
+}
+
+.balance-card data {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* ===== LOGO ===== */
+.logo {
+  border-radius: 8px;
+}
+
+/* ===== CHART CARD ===== */
+.chart-card {
+  background-color: #24243e;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.chart-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+/* ===== TABLE ===== */
+.card-table {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.table-body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.table-row {
+  flex-direction: column;
+  align-items: center;
+}
+
+.table-heading {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  color: #bbb;
+}
+
+.table-data {
+  width: 30px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+/* ===== CHART BARS ===== */
+.chart-bar {
+  width: 20px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.chart-bar[data-chart-bar="mon"] { height: 50%; background-color: #4e79a7; }
+.chart-bar[data-chart-bar="tue"] { height: 70%; background-color: #f28e2b; }
+.chart-bar[data-chart-bar="wed"] { height: 30%; background-color: #e15759; }
+.chart-bar[data-chart-bar="thu"] { height: 80%; background-color: #76b7b2; }
+.chart-bar[data-chart-bar="fri"] { height: 60%; background-color: #59a14f; }
+.chart-bar[data-chart-bar="sat"] { height: 90%; background-color: #edc948; }
+.chart-bar[data-chart-bar="sun"] { height: 40%; background-color: #b07aa1; }
+
+/* Hover effect */
+.chart-bar:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+
+/* ===== META INFO ===== */
+.wrapper.flex-center {
+  justify-content: space-between;
+}
+
+.card-meta {
+  text-align: center;
+}
+
+.meta-value {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.meta-value.small {
+  font-size: 1rem;
+  color: #4caf50;
+}
+
+.text {
+  font-size: 0.9rem;
+  color: #aaa;
+}
